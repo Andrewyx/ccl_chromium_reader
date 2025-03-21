@@ -54,7 +54,7 @@ def main(args):
                     parsed_string = parsed_string.replace("False", "\"False\"")
                     parsed_string = re.sub('"selectors":.*],', '', parsed_string)
                     json_result = json.loads(parsed_string)
-                    # print_json(data=json_result)
+                    print_json(data=json_result)
             print()
         print("DONE")
 
