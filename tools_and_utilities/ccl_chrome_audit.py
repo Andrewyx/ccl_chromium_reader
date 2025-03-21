@@ -468,7 +468,7 @@ class IndexedDbAuditor(AbstractAuditor):
                         for rec in obj_store.iterate_records(
                                 bad_deserializer_data_handler=bad_deserializer_data_handler):
                             yield (
-                                rec.sequence_number,
+                                # rec.sequence_number,
                                 database.origin,
                                 database.name,
                                 obj_store.name,
